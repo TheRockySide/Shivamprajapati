@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:wght@300&display=swap');
+
+/* ubunto font */
+
+footer {
+    background-color: rgb(141, 102, 152);
+    font-size: ubunto;
+    height: auto;
+    margin-bottom: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: Lobster;
+}
+
+
+tr td {
+    padding: 20px;
+    padding-top: 10px;
+}
+
+
+#idlink {
+    width: 450px;
+    float: right;
+    background-color: rgb(80, 42, 89);
+    border-radius: 10px;
+    margin: 18px;
+    margin-right: 50px;
+    height: 305px;
+    padding-top: 65px;
+    padding-left: 40px;
+}
+
+
+#implinks {
+    width: 60vw;
+    height: auto;
+    float: left;
+    color: white;
+    background-color: rgb(80, 42, 89);
+    border-radius: 10px;
+    margin: 18px;
+    margin-left: 50px;
+    margin-right: 0;
+    padding: 10px;
+}
+
+
+.footerlist li a {
+    color: rgb(255, 255, 255);
+    font-family: Lobster;
+    font-size: 25px;
+    font-weight: lighter;
+    padding-left: 30px;
+}
+
+
+#important {
+    text-align: center;
+    font-style: inherit;
+    font-family: lobster;
+}
+
+
+.footerlist li a:hover {
+    font-size: 25px;
+    border: solid 0.1px black;
+    background-color: black;
+}
+
+
+#copyright {
+    margin: auto;
+    margin-top: 380px;
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: Lobster;
+}
+
+
+#thanks {
+    margin: auto;
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    font-size: 20px;
+    font-family: Lobster;
+}
+
+
+h3 {
+    margin: auto;
+    padding-right: 50px;
+    font-family: lobster;
+    font-weight: lighter;
+    text-align: center;
+}
