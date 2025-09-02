@@ -425,6 +425,20 @@
 
     <!-- javascript code -->
     <script>
+                // Scroll reveal effect
+          const sections = document.querySelectorAll('.flex-container, .flex-container1, .flex-container11');
+        
+          function revealOnScroll() {
+            sections.forEach(section => {
+              const rect = section.getBoundingClientRect();
+              if (rect.top < window.innerHeight - 100) {
+                section.classList.add('visible');
+              }
+            });
+          }
+        
+          window.addEventListener('scroll', revealOnScroll);
+          revealOnScroll(); // run once at start
 
         var slideIndex = 1;
         showDivs(slideIndex);
@@ -475,5 +489,6 @@
 
 
 </body>
+
 
 </html>
