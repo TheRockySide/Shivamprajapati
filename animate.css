@@ -1,0 +1,101 @@
+/* General smoothness */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Navbar animation */
+.navbar {
+  animation: slideDown 1s ease-out;
+}
+
+/* Welcome text fade in */
+#welcome {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: fadeInUp 2s ease forwards;
+}
+
+/* Quote typewriter effect */
+.quote {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid orange;
+  animation: typing 6s steps(60, end), blink 0.8s step-end infinite;
+}
+
+/* Slideshow images */
+.mySlides img {
+  animation: zoomFade 2s ease-in-out;
+}
+
+/* Army, Navy, Airforce cards */
+.AANborder {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.AANborder:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Section fade-in on scroll */
+.flex-container,
+.flex-container1,
+.flex-container11 {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.flex-container.visible,
+.flex-container1.visible,
+.flex-container11.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer animation */
+footer {
+  animation: slideUp 1.5s ease-out;
+}
+
+/* ----------------- Keyframes ----------------- */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes zoomFade {
+  from { transform: scale(1.1); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
